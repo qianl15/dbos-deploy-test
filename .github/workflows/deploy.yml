@@ -1,0 +1,14 @@
+name: App Deploy
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./deploy.sh
+        env:
+          DBOS_REFRESH_TOKEN: ${{ secrets.DBOS_REFRESH_TOKEN }}
+          RUNTIME_COMMAND: "fastapi run app/main.py" 
