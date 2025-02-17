@@ -4,7 +4,7 @@ import time
 from dbos import DBOS, SetWorkflowID
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-
+print("runtime command is: "os.getenv("RUNTIME_COMMAND"))
 # Welcome to DBOS!
 # This is a template application built with DBOS and FastAPI.
 # It shows you how to use DBOS to build background tasks that are resilient to any failure.
