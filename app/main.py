@@ -70,5 +70,5 @@ def crash_application():
 def readme():
     with open(os.path.join("html", "app.html")) as file:
         html = file.read()
-    DBOS.logger.info("The value of RUNTIME_COMMAND is: "+ os.getenv('RUNTIME_COMMAND')
+    DBOS.logger.info("The value of RUNTIME_COMMAND is: "+ os.getenv('RUNTIME_COMMAND'))
     return HTMLResponse(html)
