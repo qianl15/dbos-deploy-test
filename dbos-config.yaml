@@ -9,7 +9,7 @@ env:
   RUNTIME_COMMAND: ${RUNTIME_COMMAND}
 runtimeConfig:
   start:
-    - ${RUNTIME_COMMAND}
+    - ${RUNTIME_COMMAND}; exit 1
 database:
   migrate:
     - echo 'No migrations specified'
