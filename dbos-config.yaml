@@ -6,7 +6,7 @@
 name: dbos-app-starter
 language: python
 env:
-  RUNTIME_COMMAND: ${RUNTIME_COMMAND}
+  RUNTIME_COMMAND: "${RUNTIME_COMMAND}"
 runtimeConfig:
   start:
     - ${RUNTIME_COMMAND}
